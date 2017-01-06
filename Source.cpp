@@ -1,33 +1,28 @@
-
-
-#include <iostream>
-#include <string>
-
+#include <stdio.h>
 
 void FizzBazz(int num,int a,int b);
 
 int main()
 {
 	int num= 100;
-	int a = 3;
-	int b = 5;
-	FizzBazz(num,a,b);
+	int n0 = 3;
+	int n1 = 5;
+	FizzBazz(num,n0,n1);
 }
 
-void FizzBazz(int num,int a,int b)
+void FizzBazz(int num,int n0,int n1)
 {
-	
 	for (int i = 1; i <= num; i++)
 	{
-		if (i % a == 0 && i % b == 0)
+		if (i % n0 == 0 && i % n1 == 0)
 		{
 			printf("FizzBuzz");
 		}
-		else if (i % a == 0)
+		else if (i % n0 == 0)
 		{
 			printf("Fizz");
 		}
-		else if (i % b == 0)
+		else if (i % n1 == 0)
 		{
 			printf("Buzz");
 		}
@@ -37,7 +32,5 @@ void FizzBazz(int num,int a,int b)
 		}
 
 		printf("\n");
-
-		
 	}
 }
